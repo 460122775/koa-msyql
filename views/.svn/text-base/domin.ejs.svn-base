@@ -1,0 +1,14 @@
+<div class="form-group">
+    <label class="col-sm-3 control-label no-padding-right" for="form-field-1"> 选择图片上传空间 </label>
+
+    <div class="col-sm-9">
+        <div class="form-group">
+            <div class="col-xs-5">
+                <select id="buckets" action="http://upload.qiniu.com/">
+                    <option value="hola" selected url="http://7xpn24.com2.z0.glb.qiniucdn.com/">hola</option>
+                    <option value="zeeguo-test" url="http://zeeguo-test.qiniudn.com/">zeeguo-test</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>

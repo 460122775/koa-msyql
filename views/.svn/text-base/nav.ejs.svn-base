@@ -1,0 +1,226 @@
+<div id="sidebar" class="sidebar                  responsive">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('sidebar', 'fixed')
+        } catch (e) {
+        }
+    </script>
+    <!-- /.sidebar-shortcuts -->
+
+    <ul class="nav nav-list">
+
+        <li class="active open">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-users"></i>
+                <span class="menu-text"> 用户管理 </span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li>
+                    <a class="ajax-link" href="javascript:void(0)" navigation-url="/list/users/users">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        用户列表管理
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a class="ajax-link" href="javascript:void(0)" navigation-url="/users/bat_add_get/users">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        用户批量导入
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a class="ajax-link" href="javascript:void(0)" navigation-url="/list/im/im">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        聊天管理
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-inbox"></i>
+                <span class="menu-text"> 打卡管理 </span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li>
+                    <a class="ajax-link" href="javascript:void(0)" navigation-url="/list/cards/cards">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        打卡列表管理
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a class="ajax-link" href="javascript:void(0)" navigation-url="/list/topics/topics">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        统计打卡数管理
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a class="ajax-link" href="javascript:void(0)" navigation-url="/list/cards_batch/cards">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        批量打卡管理
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a class="ajax-link" href="javascript:void(0)" navigation-url="/list/banner/banner">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        banner列表管理
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-list-alt"></i>
+                <span class="menu-text"> 字典管理 </span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li>
+                    <a class="ajax-link" href="javascript:void(0)" navigation-url="/list/dict_related/dict_related">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        字典列表管理
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a class="ajax-link" href="javascript:void(0)" navigation-url="/list/dict/dict">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        字典发布管理
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-heart"></i>
+                <span class="menu-text"> 举报管理 </span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li>
+                    <a class="ajax-link" href="javascript:void(0)" navigation-url="/list/card_report/card_report">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        打卡举报管理
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+                <li>
+                    <a class="ajax-link" href="javascript:void(0)" navigation-url="/list/app_report/app_report">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        APP举报列表管理
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-heart"></i>
+                <span class="menu-text"> 系统消息管理 </span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+
+            <b class="arrow"></b>
+
+            <ul class="submenu">
+                <li>
+                    <a class="ajax-link" href="javascript:void(0)" navigation-url="/list/notice/notice">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        系统消息列表管理
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+        <%if(session.isSuper){%>
+            <li>
+                <a href="#" class="dropdown-toggle">
+                    <i class="menu-icon fa fa-users"></i>
+                    <span class="menu-text"> 系统用户管理 </span>
+
+                    <b class="arrow fa fa-angle-down"></b>
+                </a>
+
+                <b class="arrow"></b>
+
+                <ul class="submenu">
+                    <li>
+                        <a class="ajax-link" href="javascript:void(0)" navigation-url="/list/admin/admin">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            系统用户列表管理
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+                </ul>
+            </li>
+        <%}%>
+
+    </ul>
+    <!-- /.nav-list -->
+
+
+    <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+        <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left"
+           data-icon2="ace-icon fa fa-angle-double-right"></i>
+    </div>
+
+    <script type="text/javascript">
+        try {
+            ace.settings.check('sidebar', 'collapsed')
+        } catch (e) {
+        }
+
+        function SwitchContent(e) {
+            var self = this;
+            var el = $(e.target);
+            el.parents('.nav').find('.active').removeClass('active');
+            el.parent().addClass('active');
+            var url = el.attr('navigation-url');
+
+        }
+
+
+    </script>
+</div>

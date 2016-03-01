@@ -1,0 +1,82 @@
+<div class="footer">
+    <div class="footer-inner">
+        <div class="footer-content">
+						<span class="bigger-120">
+							Application &copy; 2015
+						</span>
+
+            &nbsp; &nbsp;
+
+        </div>
+    </div>
+</div>
+</html>
+
+
+<!-- basic scripts -->
+
+<!--[if !IE]> -->
+<script src="/js/jquery.2.1.1.min.js"></script>
+
+<!-- <![endif]-->
+<script src="/bootstrap/js/bootstrap-switch.min.js"></script>
+<!--[if IE]>
+<script src="/js/jquery.1.11.1.min.js"></script>
+<![endif]-->
+
+<!--[if !IE]> -->
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='/js/jquery.min.js'>" + "<" + "/script>");
+</script>
+
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='/js/jquery1x.min.js'>" + "<" + "/script>");
+</script>
+<![endif]-->
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>
+<!-- page specific plugin scripts -->
+<script src="/js/qiniu.js"></script>
+<script src="/js/moment.js"></script>
+
+<script src="/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- ace scripts -->
+
+<script src="/datatable/js/jquery.dataTables.js"></script>
+<script src="/datatable/js/dataTables.tableTools.min.js"></script>
+<script src="/datatable/js/dataTables.colVis.min.js"></script>
+<script src="/js/jquery.dataTables.bootstrap.min.js"></script>
+<script src="/js/ace.min.js"></script>
+<script src="/js/ace-elements.min.js"></script>
+<script src="/js/jquery.gritter.min.js"></script>
+<script src="/js/underscore-min.js"></script>
+<script src="/js/daterangepicker.js"></script>
+<script>
+    var items = $('.ajax-link');
+    items.each(function (i) {
+        var t = $(this);
+        t.click(function () {
+            t.parents('.nav').find('.active').removeClass('active');
+            t.parents('.nav').find('.open').removeClass('open');
+            t.parent().addClass('active');
+            t.parent().parent().parent().addClass('active open');
+            var url = t.attr('navigation-url');
+            $('.main-content-inner').load(url)
+        });
+    });
+    $('[navigation-url]:first').parent().addClass('active');
+    $('.main-content-inner').load($('[navigation-url]:first').attr("navigation-url"));
+
+
+    $('a[action="LoadingChangePwd"]').bind("click", function () {
+        $('#modalcontent').load("/admin/modify");
+
+    });
+</script>

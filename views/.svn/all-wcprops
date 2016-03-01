@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/yk/!svn/ver/750/im/web/trunk/views
+END
+index.ejs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/yk/!svn/ver/504/im/web/trunk/views/index.ejs
+END
+nav.ejs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/yk/!svn/ver/1114/im/web/trunk/views/nav.ejs
+END
+top.ejs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/yk/!svn/ver/563/im/web/trunk/views/top.ejs
+END
+domin.ejs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/yk/!svn/ver/992/im/web/trunk/views/domin.ejs
+END
+error.ejs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/yk/!svn/ver/425/im/web/trunk/views/error.ejs
+END
+login.ejs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/yk/!svn/ver/1084/im/web/trunk/views/login.ejs
+END
+footer.ejs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/yk/!svn/ver/1232/im/web/trunk/views/footer.ejs
+END
+header.ejs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/yk/!svn/ver/1232/im/web/trunk/views/header.ejs
+END
+modal.ejs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/yk/!svn/ver/913/im/web/trunk/views/modal.ejs
+END

@@ -1,0 +1,47 @@
+{
+  "name": "hola",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "bufferhelper": "^0.2.1",
+    "co": "^4.6.0",
+    "co-busboy": "^1.3.1",
+    "co-defer": "^1.0.0",
+    "co-fs": "^1.2.0",
+    "co-request": "^1.0.0",
+    "iconv-lite": "^0.4.13",
+    "koa": "^1.1.2",
+    "koa-basic-auth": "^1.1.2",
+    "koa-body": "^1.4.0",
+    "koa-bodyparser": "^2.0.1",
+    "koa-compose": "^2.3.0",
+    "koa-csrf": "^2.4.0",
+    "koa-generic-session": "^1.10.1",
+    "koa-ejs": "^3.0.0",
+    "koa-logger": "^1.3.0",
+    "koa-mysql-session": "^0.0.2",
+    "koa-router": "^5.3.0",
+    "koa-session": "^3.3.1",
+    "koa-static-cache": "^3.1.3",
+    "moment": "^2.10.6",
+    "mysql": "^2.10.0",
+    "qiniu": "^6.1.9",
+    "randexp": "^0.4.2",
+    "raw-body": "^1.3.4",
+    "redis": "^2.4.2",
+    "request": "^2.67.0",
+    "sequelize": "^3.15.0",
+    "thunkify": "^2.1.2",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "me",
+  "license": "ISC"
+}
